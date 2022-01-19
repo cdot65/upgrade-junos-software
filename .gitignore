@@ -1,2 +1,3 @@
 files/ansible/roles/juniper.junos
 .vscode
+*.tgz
