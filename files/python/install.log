@@ -176,3 +176,561 @@ NOTICE: 'pending' set will be activated at next reboot...
 2022-01-19 14:09:47,416:ncclient.transport.ssh: [host office session-id 16496] Received message from host
 2022-01-19 14:09:47,420:office: Upgrade pending reboot cycle, please be patient.
 2022-01-19 14:09:47,420:office: Shutdown at Wed Jan 19 14:10:47 2022. [pid 24296]
+2022-01-19 15:13:04,836:192.168.104.168: Information logged in ./install.log
+2022-01-19 15:13:04,942:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 15:13:05,261:ncclient.transport.ssh: Authentication (publickey) failed.
+2022-01-19 15:13:05,362:ncclient.transport.ssh: Authentication (password) successful!
+2022-01-19 15:13:05,529:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f1e334dd5b0] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><nc:capabilities><nc:capability>urn:ietf:params:netconf:base:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:base:1.1</nc:capability><nc:capability>urn:ietf:params:netconf:capability:writable-running:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:candidate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:startup:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:url:1.0?scheme=http,ftp,file,https,sftp</nc:capability><nc:capability>urn:ietf:params:netconf:capability:validate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:xpath:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:notification:1.0</nc:capability><nc:capability>urn:liberouter:params:netconf:capability:power-control:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:interleave:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:with-defaults:1.0</nc:capability></nc:capabilities></nc:hello>]]>]]>
+2022-01-19 15:13:06,462:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f1e334dd5b0] Received message from host
+2022-01-19 15:13:06,464:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] initialized: session-id=30031 | server_capabilities=<dict_keyiterator object at 0x7f1e3340c450>
+2022-01-19 15:13:06,465:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:06,564:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:120fa4f4-ce11-4c76-8dc2-bc0343538271"><command>show version invoke-on all-routing-engines</command></nc:rpc>]]>]]>
+2022-01-19 15:13:09,855:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:09,864:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:09,958:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:c20c0a1b-2226-470d-a2a4-9878476b7d97"><file-show><filename>/usr/share/cevo/cevo_version</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 15:13:09,989:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:09,992:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:10,091:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:ed4db604-85a6-40ad-bf51-5165b5fa5590"><get-interface-information><routing-instance>__juniper_private1__</routing-instance><terse/></get-interface-information></nc:rpc>]]>]]>
+2022-01-19 15:13:10,330:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:10,338:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:10,432:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:3e453c14-e303-4a18-b558-91be4f1a965e"><file-show><filename>/etc/hosts.junos</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 15:13:11,217:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:11,234:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:11,319:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:f282ef85-6e29-42f1-8f5f-d44d56fc19cb"><get-route-engine-information/></nc:rpc>]]>]]>
+2022-01-19 15:13:11,348:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:11,353:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:11,449:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:41bef3eb-4c92-4265-8b49-c972eedef7ee"><get-virtual-chassis-information/></nc:rpc>]]>]]>
+2022-01-19 15:13:11,499:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:11,502:192.168.104.168: Starting the software upgrade process: junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:13:11,503:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:11,600:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:d4b0e860-7beb-44f3-9f20-0a2340517c11"><request-package-checks-pending-install/></nc:rpc>]]>]]>
+2022-01-19 15:13:11,604:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:11,606:192.168.104.168: request-package-checks-pending-install rpc is not supported on given device
+2022-01-19 15:13:11,606:192.168.104.168: computing checksum on local package: junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:13:13,531:192.168.104.168: cleaning filesystem ...
+2022-01-19 15:13:13,531:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:13,612:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:23f31276-29b9-43a7-9acc-83ccc7f8bd42"><request-system-storage-cleanup/></nc:rpc>]]>]]>
+2022-01-19 15:13:25,922:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:25,927:192.168.104.168: before copy, computing checksum on remote package: /var/tmp/junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:13:25,928:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:13:26,023:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:c9f4be51-873e-4bbe-81ec-01a25f9ae996"><get-checksum-information><path>/var/tmp/junos-arm-32-20.4R3.8.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 15:13:26,228:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:13:26,336:paramiko.transport: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 15:13:26,643:paramiko.transport: Authentication (publickey) failed.
+2022-01-19 15:13:26,856:paramiko.transport: Authentication (password) successful!
+2022-01-19 15:13:38,230:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 36388864 / 363733679 (10%)
+2022-01-19 15:13:53,305:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 72761344 / 363733679 (20%)
+2022-01-19 15:14:06,323:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 109133824 / 363733679 (30%)
+2022-01-19 15:14:21,269:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 145506304 / 363733679 (40%)
+2022-01-19 15:14:33,437:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 181878784 / 363733679 (50%)
+2022-01-19 15:14:49,566:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 218251264 / 363733679 (60%)
+2022-01-19 15:15:03,010:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 254623744 / 363733679 (70%)
+2022-01-19 15:15:16,984:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 290996224 / 363733679 (80%)
+2022-01-19 15:15:27,994:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 327368704 / 363733679 (90%)
+2022-01-19 15:15:39,576:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 363733679 / 363733679 (100%)
+2022-01-19 15:15:39,740:192.168.104.168: after copy, computing checksum on remote package: /var/tmp/junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:15:39,741:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:15:39,824:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:4c688693-8d07-488e-8659-d7e0da92e2c5"><get-checksum-information><path>/var/tmp/junos-arm-32-20.4R3.8.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 15:15:47,320:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:15:47,323:192.168.104.168: checksum check passed.
+2022-01-19 15:15:47,324:192.168.104.168: validating software against current config, please be patient ...
+2022-01-19 15:15:47,325:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:15:47,421:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:b0ceabe8-4ab5-45ca-b971-e2e293c7aeff"><request-package-validate><package-name>/var/tmp/junos-arm-32-20.4R3.8.tgz</package-name></request-package-validate></nc:rpc>]]>]]>
+2022-01-19 15:15:47,440:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:15:47,442:192.168.104.168: installing software ... please be patient ...
+2022-01-19 15:15:47,443:ncclient.operations.rpc: [host 192.168.104.168 session-id 30031] Requesting 'ExecuteRpc'
+2022-01-19 15:15:47,542:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:c22097bb-699b-4189-af23-6bb9e7bf7c74"><request-package-add><no-validate/><package-name>/var/tmp/junos-arm-32-20.4R3.8.tgz</package-name></request-package-add></nc:rpc>]]>]]>
+2022-01-19 15:17:24,966:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:17:24,969:192.168.104.168: software pkgadd package-result: 1
+Output: 
+Removing /var/log/wtmp.0.gz
+Removing /var/log/messages.0.gz
+Removing /var/log/interactive-commands.0.gz
+Removing /packages/sets/active/jdocs-ex
+Removing /packages/sets/active/jweb-ex
+setting unlink by default.
+setting unlink by default.
+veriexec: cannot validate /packages/db/pkginst.30178/manifest.ecerts: certificate is not yet valid: /C=US/ST=CA/L=Sunnyvale/O=Juniper Networks/OU=Juniper CA/CN=PackageProductionECP256_2021/emailAddress=ca@juniper.net
+veriexec: cannot validate junos-arm-32-20.4R3.8.ecerts: certificate is not yet valid: /C=US/ST=CA/L=Sunnyvale/O=Juniper Networks/OU=Juniper CA/CN=PackageProductionECP256_2021/emailAddress=ca@juniper.net
+veriexec: /packages/db/pkginst.30178/package.xml: Authentication error
+usage: /usr/sbin/pkg add <pkg> ...
+where <pkg> is a compressed tar file
+ERROR: Failed to add junos-arm-32-20.4R3.8.tgz
+
+2022-01-19 15:17:24,970:192.168.104.168: Unable to install software, False
+2022-01-19 15:23:51,409:192.168.104.168: Information logged in ./install.log
+2022-01-19 15:23:51,517:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 15:23:51,847:ncclient.transport.ssh: Authentication (publickey) failed.
+2022-01-19 15:23:51,982:ncclient.transport.ssh: Authentication (password) successful!
+2022-01-19 15:23:52,152:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f3c4fe095b0] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><nc:capabilities><nc:capability>urn:ietf:params:netconf:base:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:base:1.1</nc:capability><nc:capability>urn:ietf:params:netconf:capability:writable-running:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:candidate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:startup:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:url:1.0?scheme=http,ftp,file,https,sftp</nc:capability><nc:capability>urn:ietf:params:netconf:capability:validate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:xpath:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:notification:1.0</nc:capability><nc:capability>urn:liberouter:params:netconf:capability:power-control:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:interleave:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:with-defaults:1.0</nc:capability></nc:capabilities></nc:hello>]]>]]>
+2022-01-19 15:23:53,196:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f3c4fe095b0] Received message from host
+2022-01-19 15:23:53,197:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] initialized: session-id=31926 | server_capabilities=<dict_keyiterator object at 0x7f3c4fd3a450>
+2022-01-19 15:23:53,198:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:53,297:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:68b72023-6ddc-45e2-94cc-e255066ec338"><command>show version invoke-on all-routing-engines</command></nc:rpc>]]>]]>
+2022-01-19 15:23:54,703:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:54,710:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:54,805:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:5704c099-f6e3-4864-bb25-20b62bf396ac"><file-show><filename>/usr/share/cevo/cevo_version</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 15:23:54,823:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:54,826:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:54,925:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:3c0074fc-804e-42e7-8f8e-3d0638b86284"><get-interface-information><routing-instance>__juniper_private1__</routing-instance><terse/></get-interface-information></nc:rpc>]]>]]>
+2022-01-19 15:23:55,214:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:55,219:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:55,316:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:3dd70220-5239-4796-b789-95d79316db3a"><file-show><filename>/etc/hosts.junos</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 15:23:56,272:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:56,294:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:56,374:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:c769769c-6cb3-4b2b-914a-a4b44502d931"><get-route-engine-information/></nc:rpc>]]>]]>
+2022-01-19 15:23:56,404:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:56,409:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:56,505:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:256f2801-1b2a-44d3-8e84-bfe0d064b1bd"><get-virtual-chassis-information/></nc:rpc>]]>]]>
+2022-01-19 15:23:56,529:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:56,533:192.168.104.168: Starting the software upgrade process: junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:23:56,534:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:56,631:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:98451e4b-1d77-4658-aaf3-e0bd70b0d2ab"><request-package-checks-pending-install/></nc:rpc>]]>]]>
+2022-01-19 15:23:56,635:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:23:56,637:192.168.104.168: request-package-checks-pending-install rpc is not supported on given device
+2022-01-19 15:23:56,637:192.168.104.168: computing checksum on local package: junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:23:57,954:192.168.104.168: cleaning filesystem ...
+2022-01-19 15:23:57,954:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:23:58,040:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:7240021b-9159-46c2-ac13-772830df84f5"><request-system-storage-cleanup/></nc:rpc>]]>]]>
+2022-01-19 15:24:09,672:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:24:09,676:192.168.104.168: before copy, computing checksum on remote package: /var/tmp/junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:24:09,678:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:24:09,774:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:0b6d18f3-b3c7-47a1-82bf-4fdb8edf4598"><get-checksum-information><path>/var/tmp/junos-arm-32-20.4R3.8.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 15:24:09,846:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:24:09,949:paramiko.transport: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 15:24:10,281:paramiko.transport: Authentication (publickey) failed.
+2022-01-19 15:24:10,365:paramiko.transport: Authentication (password) successful!
+2022-01-19 15:24:23,924:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 36388864 / 363733679 (10%)
+2022-01-19 15:24:37,209:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 72761344 / 363733679 (20%)
+2022-01-19 15:24:50,064:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 109133824 / 363733679 (30%)
+2022-01-19 15:25:03,126:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 145506304 / 363733679 (40%)
+2022-01-19 15:25:15,221:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 181878784 / 363733679 (50%)
+2022-01-19 15:25:26,601:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 218251264 / 363733679 (60%)
+2022-01-19 15:25:37,567:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 254623744 / 363733679 (70%)
+2022-01-19 15:25:53,367:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 290996224 / 363733679 (80%)
+2022-01-19 15:26:05,959:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 327368704 / 363733679 (90%)
+2022-01-19 15:26:21,671:192.168.104.168: b'junos-arm-32-20.4R3.8.tgz': 363733679 / 363733679 (100%)
+2022-01-19 15:26:21,781:192.168.104.168: after copy, computing checksum on remote package: /var/tmp/junos-arm-32-20.4R3.8.tgz
+2022-01-19 15:26:21,782:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:26:21,859:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:8ffdcb48-c980-440b-ae23-8e419e68d770"><get-checksum-information><path>/var/tmp/junos-arm-32-20.4R3.8.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 15:26:29,397:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:26:29,401:192.168.104.168: checksum check passed.
+2022-01-19 15:26:29,401:192.168.104.168: validating software against current config, please be patient ...
+2022-01-19 15:26:29,402:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:26:29,499:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:3caf4f2a-6cf7-4f32-ae22-f14574deebc9"><request-package-validate><package-name>/var/tmp/junos-arm-32-20.4R3.8.tgz</package-name></request-package-validate></nc:rpc>]]>]]>
+2022-01-19 15:26:29,510:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:26:29,513:192.168.104.168: installing software ... please be patient ...
+2022-01-19 15:26:29,514:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:26:29,612:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:55795333-30d4-437e-ac09-ea9bad4c9ac9"><request-package-add><no-validate/><package-name>/var/tmp/junos-arm-32-20.4R3.8.tgz</package-name></request-package-add></nc:rpc>]]>]]>
+2022-01-19 15:31:46,841:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:31:46,846:192.168.104.168: software pkgadd package-result: 0
+Output: 
+Removing /var/log/install.0.gz
+Removing /var/log/wtmp.0.gz
+Removing /var/log/messages.0.gz
+Removing /var/log/interactive-commands.0.gz
+setting unlink by default.
+setting unlink by default.
+Verified junos-arm-32-20.4R3.8 signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Verified fips-mode signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding fips-mode-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified jail-runtime signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jail-runtime-arm-32-20210618.f43645e_builder_stable_11-204ab ...
+Verified jdocs-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jdocs-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified jpfe-EX34XX signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jpfe-EX34XX-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified jphone-home signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jphone-home-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified jsd-jet-1 signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jsd-arm-32-20.4R3.8-jet-1 ...
+Verified jsdn signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jsdn-arm-32-20.4R3.8 ...
+Verified junos-daemons signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-daemons-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-dp-crypto-support-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-dp-crypto-support-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-libs-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-libs-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-libs signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-libs-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-modules-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-modules-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-modules signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-modules-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-net-dcp-prd signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-net-dcp-prd-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-net-prd signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-net-prd-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-openconfig signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-openconfig-arm-32-20.4R3.8 ...
+Verified junos-platform-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-platform-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-probe signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-probe-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-runtime-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-runtime-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified junos-runtime signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-runtime-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified jweb-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jweb-ex-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified na-telemetry signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding na-telemetry-arm-32-20.4R3.8 ...
+Verified oam-ve signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Installing OAM volume contents ...
+The OAM volume is now installed
+Updating OAM boot
+Updating OAM loader
+Verified os-boot-junos-ve signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Updating /boot junos-boot.tar ...
+Updating /boot loader-ve-boot.tar ...
+Adding os-boot-junos-ve-arm-32-20210618.f43645e_builder_stable_11-204ab ...
+Verified os-crypto signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-crypto-arm-32-20210618.f43645e_builder_stable_11-204ab ...
+Verified os-kernel-prd signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-kernel-prd-arm-32-20210618.f43645e_builder_stable_11-204ab ...
+Verified os-libs signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-libs-11-arm-32-20210618.f43645e_builder_stable_11-204ab ...
+Verified os-runtime signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-runtime-arm-32-20210618.f43645e_builder_stable_11-204ab ...
+Verified os-zoneinfo signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-zoneinfo-20210618.f43645e_builder_stable_11-204ab ...
+Verified py-base signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding py-base-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified py-base2 signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding py-base2-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified py-extensions signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding py-extensions-arm-32-20210907.154329_builder_junos_204_r3 ...
+Verified py-extensions2 signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding py-extensions2-arm-32-20210907.154329_builder_junos_204_r3 ...
+NOTICE: 'pending' set will be activated at next reboot...
+
+2022-01-19 15:31:46,847:192.168.104.168: Software installation complete. Rebooting
+2022-01-19 15:31:46,848:ncclient.operations.rpc: [host 192.168.104.168 session-id 31926] Requesting 'ExecuteRpc'
+2022-01-19 15:31:46,943:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:d062caab-eaa0-4d4f-af14-8ecce1841f36"><request-reboot><in>0</in></request-reboot></nc:rpc>]]>]]>
+2022-01-19 15:31:48,181:ncclient.transport.ssh: [host 192.168.104.168 session-id 31926] Received message from host
+2022-01-19 15:31:48,185:192.168.104.168: Upgrade pending reboot cycle, please be patient.
+2022-01-19 15:31:48,185:192.168.104.168: Shutdown at Wed Jan 19 15:32:48 2022. [pid 37101]
+2022-01-19 16:49:31,225:192.168.104.168: Information logged in ./install.log
+2022-01-19 16:49:31,630:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 16:49:32,152:ncclient.transport.ssh: Authentication (publickey) failed.
+2022-01-19 16:49:32,329:ncclient.transport.ssh: Authentication (password) successful!
+2022-01-19 16:49:32,588:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f71a3c366a0] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><nc:capabilities><nc:capability>urn:ietf:params:netconf:base:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:base:1.1</nc:capability><nc:capability>urn:ietf:params:netconf:capability:writable-running:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:candidate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:startup:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:url:1.0?scheme=http,ftp,file,https,sftp</nc:capability><nc:capability>urn:ietf:params:netconf:capability:validate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:xpath:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:notification:1.0</nc:capability><nc:capability>urn:liberouter:params:netconf:capability:power-control:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:interleave:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:with-defaults:1.0</nc:capability></nc:capabilities></nc:hello>]]>]]>
+2022-01-19 16:49:33,504:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f71a3c366a0] Received message from host
+2022-01-19 16:49:33,506:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] initialized: session-id=16197 | server_capabilities=<dict_keyiterator object at 0x7f71a3b88720>
+2022-01-19 16:49:33,507:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:33,606:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:dcbe897f-9794-45ec-bbaa-5550dd7dbb74"><command>show version invoke-on all-routing-engines</command></nc:rpc>]]>]]>
+2022-01-19 16:49:35,256:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:35,267:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:35,360:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:587f868f-5705-4936-a064-f12aedc62999"><file-show><filename>/usr/share/cevo/cevo_version</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 16:49:35,398:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:35,400:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:35,499:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:682f2ca5-1af3-4f03-aef2-2ac3089284b1"><get-interface-information><routing-instance>__juniper_private1__</routing-instance><terse/></get-interface-information></nc:rpc>]]>]]>
+2022-01-19 16:49:35,737:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:35,744:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:35,839:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:fcb56129-23f1-49e9-a480-ae7597448d40"><file-show><filename>/etc/hosts.junos</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 16:49:36,671:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:36,699:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:36,773:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:b8abd887-68a1-457c-9d38-6e3ebb2b0c39"><get-route-engine-information/></nc:rpc>]]>]]>
+2022-01-19 16:49:36,811:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:36,815:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:36,912:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:0b15dd14-11ff-4727-ac9c-c97bffa52f41"><get-virtual-chassis-information/></nc:rpc>]]>]]>
+2022-01-19 16:49:37,028:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:37,033:192.168.104.168: Starting the software upgrade process: junos-arm-32-21.4R1.12.tgz
+2022-01-19 16:49:37,033:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:37,135:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:7ebe99fe-aa28-47af-ade2-9a55a8e7f7bb"><request-package-checks-pending-install/></nc:rpc>]]>]]>
+2022-01-19 16:49:37,144:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:37,146:192.168.104.168: request-package-checks-pending-install rpc is not supported on given device
+2022-01-19 16:49:37,147:192.168.104.168: computing checksum on local package: junos-arm-32-21.4R1.12.tgz
+2022-01-19 16:49:38,784:192.168.104.168: cleaning filesystem ...
+2022-01-19 16:49:38,784:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:38,852:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:7ed7d884-4b00-45e5-90ad-949ffee8b400"><request-system-storage-cleanup/></nc:rpc>]]>]]>
+2022-01-19 16:49:51,013:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:51,017:192.168.104.168: before copy, computing checksum on remote package: /var/tmp/junos-arm-32-21.4R1.12.tgz
+2022-01-19 16:49:51,018:ncclient.operations.rpc: [host 192.168.104.168 session-id 16197] Requesting 'ExecuteRpc'
+2022-01-19 16:49:51,115:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:8d4b0d75-5e9e-4eeb-b477-fcec4a2f2ecb"><get-checksum-information><path>/var/tmp/junos-arm-32-21.4R1.12.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 16:49:51,325:ncclient.transport.ssh: [host 192.168.104.168 session-id 16197] Received message from host
+2022-01-19 16:49:51,472:paramiko.transport: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 16:49:51,856:paramiko.transport: Authentication (publickey) failed.
+2022-01-19 16:49:51,997:paramiko.transport: Authentication (password) successful!
+2022-01-19 16:50:03,647:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 37175296 / 371727780 (10%)
+2022-01-19 16:50:15,099:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 74350592 / 371727780 (20%)
+2022-01-19 16:50:26,724:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 111525888 / 371727780 (30%)
+2022-01-19 16:50:38,245:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 148701184 / 371727780 (40%)
+2022-01-19 16:50:49,846:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 185876480 / 371727780 (50%)
+2022-01-19 16:51:01,273:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 223051776 / 371727780 (60%)
+2022-01-19 16:51:12,758:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 260210688 / 371727780 (70%)
+2022-01-19 16:51:24,490:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 297385984 / 371727780 (80%)
+2022-01-19 16:51:35,971:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 334561280 / 371727780 (90%)
+2022-01-19 16:51:47,263:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 371727780 / 371727780 (100%)
+2022-01-19 16:51:47,334:192.168.104.168: Unable to install software, scp: /var/tmp/junos-arm-32-21.4R1.12.tgz: No space left on device
+
+2022-01-19 16:51:47,334:192.168.104.168: Unable to install software, False
+2022-01-19 16:54:27,852:192.168.104.168: Information logged in ./install.log
+2022-01-19 16:54:27,941:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 16:54:28,219:ncclient.transport.ssh: Authentication (publickey) failed.
+2022-01-19 16:54:28,366:ncclient.transport.ssh: Authentication (password) successful!
+2022-01-19 16:54:28,538:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f448e0a36a0] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><nc:capabilities><nc:capability>urn:ietf:params:netconf:base:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:base:1.1</nc:capability><nc:capability>urn:ietf:params:netconf:capability:writable-running:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:candidate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:startup:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:url:1.0?scheme=http,ftp,file,https,sftp</nc:capability><nc:capability>urn:ietf:params:netconf:capability:validate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:xpath:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:notification:1.0</nc:capability><nc:capability>urn:liberouter:params:netconf:capability:power-control:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:interleave:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:with-defaults:1.0</nc:capability></nc:capabilities></nc:hello>]]>]]>
+2022-01-19 16:54:29,550:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f448e0a36a0] Received message from host
+2022-01-19 16:54:29,552:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] initialized: session-id=16391 | server_capabilities=<dict_keyiterator object at 0x7f448dfd24f0>
+2022-01-19 16:54:29,554:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:29,652:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:c4752410-0093-4879-a43e-e2c78b9b9a91"><command>show version invoke-on all-routing-engines</command></nc:rpc>]]>]]>
+2022-01-19 16:54:31,191:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:31,200:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:31,293:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:06762f70-4f7b-438a-b0d4-777f36cb264a"><file-show><filename>/usr/share/cevo/cevo_version</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 16:54:31,308:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:31,311:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:31,410:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:b8c3ecff-259c-4708-b713-1626b731afe7"><get-interface-information><routing-instance>__juniper_private1__</routing-instance><terse/></get-interface-information></nc:rpc>]]>]]>
+2022-01-19 16:54:31,682:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:31,689:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:31,785:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:3544d209-6a53-426d-b73d-c6e2b25fb7aa"><file-show><filename>/etc/hosts.junos</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 16:54:32,664:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:32,689:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:32,766:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:8cd68bb1-304e-47f4-9f5f-b5db8650eedd"><get-route-engine-information/></nc:rpc>]]>]]>
+2022-01-19 16:54:32,791:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:32,796:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:32,893:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:66340cb3-9e52-447e-aaf3-a61d6118555d"><get-virtual-chassis-information/></nc:rpc>]]>]]>
+2022-01-19 16:54:32,919:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:32,922:192.168.104.168: Starting the software upgrade process: junos-arm-32-21.4R1.12.tgz
+2022-01-19 16:54:32,923:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:33,020:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:00c96194-73af-4379-ae3c-2ef4cdd92667"><request-package-checks-pending-install/></nc:rpc>]]>]]>
+2022-01-19 16:54:33,025:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:33,027:192.168.104.168: request-package-checks-pending-install rpc is not supported on given device
+2022-01-19 16:54:33,027:192.168.104.168: computing checksum on local package: junos-arm-32-21.4R1.12.tgz
+2022-01-19 16:54:34,382:192.168.104.168: cleaning filesystem ...
+2022-01-19 16:54:34,383:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:34,430:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:cd30c509-d3ca-4ee2-b1ea-ce22330341e0"><request-system-storage-cleanup/></nc:rpc>]]>]]>
+2022-01-19 16:54:46,047:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:46,051:192.168.104.168: before copy, computing checksum on remote package: /var/tmp/junos-arm-32-21.4R1.12.tgz
+2022-01-19 16:54:46,051:ncclient.operations.rpc: [host 192.168.104.168 session-id 16391] Requesting 'ExecuteRpc'
+2022-01-19 16:54:46,149:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:ee46ca98-8a1d-49d3-82be-bda035307a1d"><get-checksum-information><path>/var/tmp/junos-arm-32-21.4R1.12.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 16:54:46,225:ncclient.transport.ssh: [host 192.168.104.168 session-id 16391] Received message from host
+2022-01-19 16:54:46,371:paramiko.transport: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 16:54:46,708:paramiko.transport: Authentication (publickey) failed.
+2022-01-19 16:54:46,840:paramiko.transport: Authentication (password) successful!
+2022-01-19 16:54:58,607:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 37175296 / 371727780 (10%)
+2022-01-19 16:55:09,965:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 74350592 / 371727780 (20%)
+2022-01-19 16:55:21,518:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 111525888 / 371727780 (30%)
+2022-01-19 16:55:32,964:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 148701184 / 371727780 (40%)
+2022-01-19 16:55:44,419:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 185876480 / 371727780 (50%)
+2022-01-19 16:55:56,269:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 223051776 / 371727780 (60%)
+2022-01-19 16:56:07,749:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 260210688 / 371727780 (70%)
+2022-01-19 16:56:19,513:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 297385984 / 371727780 (80%)
+2022-01-19 16:56:30,974:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 334561280 / 371727780 (90%)
+2022-01-19 16:56:42,049:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 371727780 / 371727780 (100%)
+2022-01-19 16:56:42,122:192.168.104.168: Unable to install software, scp: /var/tmp/junos-arm-32-21.4R1.12.tgz: No space left on device
+
+2022-01-19 16:56:42,123:192.168.104.168: Unable to install software, False
+2022-01-19 17:25:08,612:192.168.104.168: Information logged in ./install.log
+2022-01-19 17:25:08,720:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 17:25:09,006:ncclient.transport.ssh: Authentication (publickey) failed.
+2022-01-19 17:25:09,109:ncclient.transport.ssh: Authentication (password) successful!
+2022-01-19 17:25:09,281:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f3d367756a0] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><nc:capabilities><nc:capability>urn:ietf:params:netconf:base:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:base:1.1</nc:capability><nc:capability>urn:ietf:params:netconf:capability:writable-running:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:candidate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:startup:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:url:1.0?scheme=http,ftp,file,https,sftp</nc:capability><nc:capability>urn:ietf:params:netconf:capability:validate:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:xpath:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:notification:1.0</nc:capability><nc:capability>urn:liberouter:params:netconf:capability:power-control:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:interleave:1.0</nc:capability><nc:capability>urn:ietf:params:netconf:capability:with-defaults:1.0</nc:capability></nc:capabilities></nc:hello>]]>]]>
+2022-01-19 17:25:10,466:ncclient.transport.ssh: [host 192.168.104.168 session 0x7f3d367756a0] Received message from host
+2022-01-19 17:25:10,467:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] initialized: session-id=17927 | server_capabilities=<dict_keyiterator object at 0x7f3d366a54a0>
+2022-01-19 17:25:10,467:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:10,567:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:f71f0deb-bfab-44a1-8ad7-04bd6f2a4b92"><command>show version invoke-on all-routing-engines</command></nc:rpc>]]>]]>
+2022-01-19 17:25:12,159:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:12,169:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:12,262:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:45a66d11-04e6-4f31-99bc-6395f766da5f"><file-show><filename>/usr/share/cevo/cevo_version</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 17:25:12,276:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:12,279:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:12,378:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:1a28bf98-f5a3-453e-8aef-e325146692a6"><get-interface-information><routing-instance>__juniper_private1__</routing-instance><terse/></get-interface-information></nc:rpc>]]>]]>
+2022-01-19 17:25:12,635:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:12,642:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:12,738:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:304c0a79-be57-4a2f-bbb6-617d01a47b1a"><file-show><filename>/etc/hosts.junos</filename></file-show></nc:rpc>]]>]]>
+2022-01-19 17:25:13,624:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:13,646:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:13,726:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:d5ae7225-5836-4fe4-80d6-11a58fef5769"><get-route-engine-information/></nc:rpc>]]>]]>
+2022-01-19 17:25:13,748:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:13,753:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:13,850:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:71579b7d-2570-412d-9332-8f817529b1a4"><get-virtual-chassis-information/></nc:rpc>]]>]]>
+2022-01-19 17:25:13,878:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:13,883:192.168.104.168: Starting the software upgrade process: junos-arm-32-21.4R1.12.tgz
+2022-01-19 17:25:13,884:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:13,980:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:0524c6f0-4e97-4f6c-b26e-0ba87da85784"><request-package-checks-pending-install/></nc:rpc>]]>]]>
+2022-01-19 17:25:13,986:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:13,988:192.168.104.168: request-package-checks-pending-install rpc is not supported on given device
+2022-01-19 17:25:13,988:192.168.104.168: computing checksum on local package: junos-arm-32-21.4R1.12.tgz
+2022-01-19 17:25:15,430:192.168.104.168: cleaning filesystem ...
+2022-01-19 17:25:15,431:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:15,492:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:a964252b-d8f1-404d-93a8-3b659883485c"><request-system-storage-cleanup/></nc:rpc>]]>]]>
+2022-01-19 17:25:27,328:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:27,332:192.168.104.168: before copy, computing checksum on remote package: /var/tmp/junos-arm-32-21.4R1.12.tgz
+2022-01-19 17:25:27,333:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:25:27,430:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:760ffc30-5806-465c-bcb4-60bd78ece775"><get-checksum-information><path>/var/tmp/junos-arm-32-21.4R1.12.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 17:25:27,510:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:25:27,644:paramiko.transport: Connected (version 2.0, client OpenSSH_7.5)
+2022-01-19 17:25:27,926:paramiko.transport: Authentication (publickey) failed.
+2022-01-19 17:25:28,147:paramiko.transport: Authentication (password) successful!
+2022-01-19 17:25:39,586:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 37175296 / 371727780 (10%)
+2022-01-19 17:25:51,066:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 74350592 / 371727780 (20%)
+2022-01-19 17:26:02,751:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 111525888 / 371727780 (30%)
+2022-01-19 17:26:14,452:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 148701184 / 371727780 (40%)
+2022-01-19 17:26:25,923:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 185876480 / 371727780 (50%)
+2022-01-19 17:26:37,490:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 223051776 / 371727780 (60%)
+2022-01-19 17:26:51,662:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 260210688 / 371727780 (70%)
+2022-01-19 17:27:03,155:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 297385984 / 371727780 (80%)
+2022-01-19 17:27:14,630:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 334561280 / 371727780 (90%)
+2022-01-19 17:27:25,981:192.168.104.168: b'junos-arm-32-21.4R1.12.tgz': 371727780 / 371727780 (100%)
+2022-01-19 17:27:26,087:192.168.104.168: after copy, computing checksum on remote package: /var/tmp/junos-arm-32-21.4R1.12.tgz
+2022-01-19 17:27:26,088:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:27:26,102:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:eb80ee5a-e8c1-4ec0-8e1f-cb9e445b5797"><get-checksum-information><path>/var/tmp/junos-arm-32-21.4R1.12.tgz</path></get-checksum-information></nc:rpc>]]>]]>
+2022-01-19 17:27:33,858:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:27:33,861:192.168.104.168: checksum check passed.
+2022-01-19 17:27:33,862:192.168.104.168: validating software against current config, please be patient ...
+2022-01-19 17:27:33,863:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:27:33,959:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:998172f6-3ffd-498e-b716-abc7f3ddd1b5"><request-package-validate><package-name>/var/tmp/junos-arm-32-21.4R1.12.tgz</package-name></request-package-validate></nc:rpc>]]>]]>
+2022-01-19 17:27:33,968:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:27:33,970:192.168.104.168: installing software ... please be patient ...
+2022-01-19 17:27:33,971:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:27:34,069:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:3f1324bf-a15a-4e9d-ab66-9760e7d9361e"><request-package-add><no-validate/><package-name>/var/tmp/junos-arm-32-21.4R1.12.tgz</package-name></request-package-add></nc:rpc>]]>]]>
+2022-01-19 17:32:50,277:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:32:50,281:192.168.104.168: software pkgadd package-result: 0
+Output: 
+Removing /var/log/wtmp.0.gz
+Removing /var/log/messages.0.gz
+Removing /var/log/interactive-commands.0.gz
+setting unlink by default.
+setting unlink by default.
+Verified junos-arm-32-21.4R1.12 signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Verified deebe signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Verified dsa signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding dsa-arm-32-21.4R1.12 ...
+Verified fips-mode signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding fips-mode-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified jail-runtime signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jail-runtime-arm-32-20211117.16f0122_builder_stable_12 ...
+Verified jdocs-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jdocs-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified jpfe-EX34XX signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jpfe-EX34XX-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified jphone-home signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jphone-home-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified jsd-jet-1 signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jsd-arm-32-21.4R1.12-jet-1 ...
+Verified jsdn signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jsdn-arm-32-21.4R1.12 ...
+Verified junos-daemons signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-daemons-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-dp-crypto-support-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-dp-crypto-support-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-libs-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-libs-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-libs signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-libs-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-modules-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-modules-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-modules signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-modules-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-net-dcp-prd signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-net-dcp-prd-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-net-prd signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-net-prd-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-openconfig signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-openconfig-arm-32-21.4R1.12 ...
+Verified junos-platform-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-platform-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-probe signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-probe-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-routing-aggregated signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-routing-aggregated-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-runtime-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-runtime-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified junos-runtime signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding junos-runtime-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified jweb-ex signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding jweb-ex-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified na-telemetry signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding na-telemetry-arm-32-21.4R1.12 ...
+Verified oam-ve signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Installing OAM volume contents ...
+The OAM volume is now installed
+Updating OAM boot
+Verified os-boot-junos-ve signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Updating /boot junos-boot.tar ...
+Updating /boot loader-ve-boot.tar ...
+Adding os-boot-junos-ve-arm-32-20211117.16f0122_builder_stable_12 ...
+Verified os-crypto signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-crypto-arm-32-20211117.16f0122_builder_stable_12 ...
+Verified os-kernel-prd signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-kernel-prd-arm-32-20211117.16f0122_builder_stable_12 ...
+Verified os-libs signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-libs-12-arm-32-20211117.16f0122_builder_stable_12 ...
+Verified os-runtime signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-runtime-arm-32-20211117.16f0122_builder_stable_12 ...
+Verified os-zoneinfo signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding os-zoneinfo-20211117.16f0122_builder_stable_12 ...
+Verified py-base signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding py-base-arm-32-20211217.124458_builder_junos_214_r1 ...
+Verified py-extensions signed by PackageProductionECP256_2021 method ECDSA256+SHA256
+Adding py-extensions-arm-32-20211217.124458_builder_junos_214_r1 ...
+NOTICE: 'pending' set will be activated at next reboot...
+
+2022-01-19 17:32:50,281:192.168.104.168: Software installation complete. Rebooting
+2022-01-19 17:32:50,282:ncclient.operations.rpc: [host 192.168.104.168 session-id 17927] Requesting 'ExecuteRpc'
+2022-01-19 17:32:50,378:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Sending:
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:336743bd-0114-428b-bbb3-f2aacd7d8b26"><request-reboot><in>0</in></request-reboot></nc:rpc>]]>]]>
+2022-01-19 17:32:51,258:ncclient.transport.ssh: [host 192.168.104.168 session-id 17927] Received message from host
+2022-01-19 17:32:51,262:192.168.104.168: Upgrade pending reboot cycle, please be patient.
+2022-01-19 17:32:51,262:192.168.104.168: Shutdown at Wed Jan 19 17:33:51 2022. [pid 23015]

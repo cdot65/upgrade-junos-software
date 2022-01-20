@@ -3,8 +3,8 @@ from jnpr.junos import Device
 from jnpr.junos.utils.sw import SW
 from jnpr.junos.exception import ConnectError
 
-host = "office"
-package = "junos-arm-32-20.4R3.8.tgz"
+host = "192.168.104.168"
+package = "junos-arm-32-21.4R1.12.tgz"
 remote_path = "/var/tmp"
 validate = True
 logfile = "./install.log"
@@ -47,6 +47,7 @@ def main():
         # Starting in Release 2.5.0, install() returns a tuple instead of a Boolean
         ok, msg = sw.install(
             package=package,
+            cleanfs=True,
             remote_path=remote_path,
             progress=update_progress,
             validate=validate,

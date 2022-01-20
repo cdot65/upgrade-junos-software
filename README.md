@@ -320,3 +320,28 @@ Software installation complete. Rebooting
 Upgrade pending reboot cycle, please be patient.
 Shutdown at Wed Jan 19 14:10:47 2022. [pid 24296]
 ```
+
+example of a failed upgrade, in this example the switch's clock was behind the certificate validation period for the new OS
+
+```bash
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:c22097bb-699b-4189-af23-6bb9e7bf7c74"><request-package-add><no-validate/><package-name>/var/tmp/junos-arm-32-20.4R3.8.tgz</package-name></request-package-add></nc:rpc>]]>]]>
+2022-01-19 15:17:24,966:ncclient.transport.ssh: [host 192.168.104.168 session-id 30031] Received message from host
+2022-01-19 15:17:24,969:192.168.104.168: software pkgadd package-result: 1
+Output:
+Removing /var/log/wtmp.0.gz
+Removing /var/log/messages.0.gz
+Removing /var/log/interactive-commands.0.gz
+Removing /packages/sets/active/jdocs-ex
+Removing /packages/sets/active/jweb-ex
+setting unlink by default.
+setting unlink by default.
+veriexec: cannot validate /packages/db/pkginst.30178/manifest.ecerts: certificate is not yet valid: /C=US/ST=CA/L=Sunnyvale/O=Juniper Networks/OU=Juniper CA/CN=PackageProductionECP256_2021/emailAddress=ca@juniper.net
+veriexec: cannot validate junos-arm-32-20.4R3.8.ecerts: certificate is not yet valid: /C=US/ST=CA/L=Sunnyvale/O=Juniper Networks/OU=Juniper CA/CN=PackageProductionECP256_2021/emailAddress=ca@juniper.net
+veriexec: /packages/db/pkginst.30178/package.xml: Authentication error
+usage: /usr/sbin/pkg add <pkg> ...
+where <pkg> is a compressed tar file
+ERROR: Failed to add junos-arm-32-20.4R3.8.tgz
+
+2022-01-19 15:17:24,970:192.168.104.168: Unable to install software, False
+
+```
